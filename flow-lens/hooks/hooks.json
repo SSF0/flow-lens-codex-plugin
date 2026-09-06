@@ -1,0 +1,7 @@
+{
+  "description": "在已启用流程图的会话中提醒 Codex 同步文件、方法和分支。只读取本机该会话的流程状态，不读取聊天记录、不修改代码、不阻止任务。",
+  "hooks": {
+    "UserPromptSubmit": [{"hooks":[{"type":"command","command":"\"$PLUGIN_ROOT/scripts/run-hook.sh\"","timeout":3,"additionalContextLimit":500}]}],
+    "SessionStart": [{"matcher":"startup|resume|compact","hooks":[{"type":"command","command":"\"$PLUGIN_ROOT/scripts/run-hook.sh\"","timeout":3,"additionalContextLimit":500}]}]
+  }
+}

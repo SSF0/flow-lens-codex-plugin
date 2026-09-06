@@ -1,0 +1,6 @@
+interface:
+  display_name: "流程图"
+  short_description: "为当前会话持续展示相关文件、方法调用和逻辑分支，支持拖拽编辑"
+  default_prompt: "使用 $flow-lens 开启当前会话的流程图；后续读取或修改相关文件、方法时，持续更新右侧的逻辑和分支。"
+policy:
+  allow_implicit_invocation: true
