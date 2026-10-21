@@ -1,13 +1,15 @@
-# Flow Lens 安装包
+# 安装 Flow Lens
 
-## 安装
+需要 macOS、Codex CLI 和 Node.js 22+。在解压目录运行：
 
-1. 安装或更新 Codex，确保终端可以运行 `codex`。
-2. 安装 Node.js 22 或更高版本。
-3. 在终端进入本目录并运行 `./install.sh`。
-4. 完全退出并重新打开 Codex，创建一个新任务。
-5. 在输入框的技能选择器中搜索“流程图”或“flow-lens”。
+```sh
+./install.sh
+```
 
-请把解压后的目录保存在固定位置。插件数据保存在当前设备的 `~/.local/share/flow-lens/`，不会自动同步其他设备的流程图。
+重启 Codex，新建任务并选择技能 **流程图**。首次启用按提示信任 Hook。
 
-项目主页：https://github.com/SSF0/flow-lens-codex-plugin
+查看时直接描述任务；编辑后点“提交并复制”，将指令粘贴到当前会话。
+
+请保留解压目录。流程数据保存在本机 `~/.local/share/flow-lens/`。
+
+[项目主页](https://github.com/SSF0/flow-lens-codex-plugin)

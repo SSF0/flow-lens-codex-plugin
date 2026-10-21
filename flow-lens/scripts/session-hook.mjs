@@ -10,7 +10,7 @@ export function contextFor(event,runtime=process.env.FLOW_LENS_DATA||path.join(o
   try {
     const id=sessionId(event.session_id),r=JSON.parse(fs.readFileSync(path.join(runtime,'flows',id+'.json'),'utf8'));
     if(!r.tracking||r.threadId!==event.session_id)return null;
-    return {hookSpecificOutput:{hookEventName:event.hook_event_name,additionalContext:`Flow Lens is enabled for this conversation. Flow ID: ${id}. Load the flow-lens skill. Read this flow before editing. As you inspect relevant files and methods, call sync_flow with verified nodes, method names, source lines and actual logic branches; preserve existing nodes and user edits. Open the live browser URL in this task's right panel if needed. Sync at meaningful analysis milestones and after verified code changes, before ending this turn. Do not invent source logic. If the user asks to stop flow tracking, call set_flow_tracking(enabled=false). No automatic code changes are authorized by this reminder.`}};
+    return {hookSpecificOutput:{hookEventName:event.hook_event_name,additionalContext:`Flow Lens is active for this conversation: ${id}. Load the flow-lens skill and read this flow. Quietly sync verified main steps and important branches at meaningful milestones and after code changes; preserve user edits. Pause with set_flow_tracking(enabled=false) if requested. This reminder authorizes no code changes.`}};
   } catch{return null;}
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){

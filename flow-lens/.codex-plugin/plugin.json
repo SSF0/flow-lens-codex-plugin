@@ -1,19 +1,19 @@
 {
   "name": "flow-lens",
-  "version": "0.1.0+codex.20260905035056",
-  "description": "Editable code and task flowcharts in the Codex right browser panel, with source links and branch change proposals.",
+  "version": "0.2.0",
+  "description": "Concise code flowcharts for the current Codex conversation, with details on demand and editable branches.",
   "mcpServers": "./.mcp.json",
   "author": {
     "name": "SSF0"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "\u6d41\u7a0b\u56fe \u00b7 Flow Lens",
-    "shortDescription": "\u67e5\u770b\u3001\u62d6\u62fd\u548c\u4fee\u6539\u5f53\u524d\u4f1a\u8bdd\u7684\u4ee3\u7801\u6d41\u7a0b\u3002",
-    "longDescription": "\u5728 Codex \u53f3\u4fa7\u6d4f\u89c8\u5668\u67e5\u770b\u4ee3\u7801\u548c\u4efb\u52a1\u6d41\u7a0b\uff0c\u62d6\u62fd\u8282\u70b9\u3001\u7f16\u8f91\u5206\u652f\u3001\u5bf9\u6bd4\u903b\u8f91\u53d8\u5316\uff0c\u5e76\u5c06\u63d0\u6848\u4ea4\u56de\u4f1a\u8bdd\u6267\u884c\u3002",
+    "displayName": "流程图 · Flow Lens",
+    "shortDescription": "查看主要流程，点击查看详情，拖拽修改分支。",
+    "longDescription": "在 Codex 右侧查看主要步骤和关键分支；点击节点查看说明与源码，编辑后提交并复制指令交回当前会话。",
     "developerName": "SSF0",
     "category": "Productivity",
     "capabilities": [],
-    "defaultPrompt": "\u5f00\u542f\u5f53\u524d\u4f1a\u8bdd\u7684\u6d41\u7a0b\u56fe\uff0c\u968f\u7740\u4efb\u52a1\u8bfb\u53d6\u6216\u4fee\u6539\u6587\u4ef6\u548c\u65b9\u6cd5\uff0c\u6301\u7eed\u663e\u793a\u8c03\u7528\u5173\u7cfb\u4e0e\u903b\u8f91\u5206\u652f\u3002"
+    "defaultPrompt": "显示当前任务的主要流程和关键分支，保持简洁并随代码更新。"
   }
 }

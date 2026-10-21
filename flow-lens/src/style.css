@@ -23,7 +23,7 @@
 @media(max-width:560px){.context select{display:none}.context p{max-width:90vw}.nav-actions{gap:0}.nav-actions button{font-size:11px;padding:6px}aside{position:absolute;right:0;top:120px;bottom:0;width:min(280px,85vw);z-index:10;box-shadow:var(--shadow)}.palette{padding:5px}.palette button{font-size:10px}footer>span:last-child{display:none}.mode-view .context p{white-space:normal}}
 
 /* Codex opens details as a bottom drawer; a normal browser keeps the side inspector. */
-.codex-surface aside{position:absolute;z-index:20;left:0;right:0;bottom:0;width:100%;max-height:min(48vh,460px);border-left:0;border-top:1px solid var(--border);box-shadow:0 -14px 38px #0002;display:flex;overflow:auto;animation:drawer-up .16s ease-out}
+.codex-surface aside{position:absolute;z-index:20;left:0;right:0;top:auto;bottom:0;width:100%;max-height:min(48vh,460px);border-left:0;border-top:1px solid var(--border);box-shadow:0 -14px 38px #0002;display:flex;overflow:auto;animation:drawer-up .16s ease-out}
 :root[data-theme="dark"] .codex-surface aside{box-shadow:0 -14px 38px #0008}
 .codex-surface aside>.close-inspector{position:sticky;top:6px;right:8px;order:10;margin-left:auto;z-index:2;height:32px;flex:0 0 32px}
 .codex-surface aside>.inspector{flex:1;min-width:280px;border-bottom:0}
@@ -31,3 +31,14 @@
 .codex-surface aside>.code-view pre{max-height:390px;margin-bottom:0}
 @keyframes drawer-up{from{transform:translateY(18px);opacity:.5}to{transform:translateY(0);opacity:1}}
 @media(max-width:700px){.codex-surface aside{display:block}.codex-surface aside>.code-view{border-left:0;border-top:1px solid var(--border)}.codex-surface aside>.close-inspector{position:absolute}}
+
+/* Keep the canvas readable; details belong in the inspector. */
+.flow-node{width:190px;padding:12px 16px;box-shadow:0 2px 8px #00000008}
+.flow-node strong{text-align:center}
+.decision-mark{margin-right:8px;color:var(--muted)}
+.node-options{margin:16px 0;color:var(--muted)}
+.node-options summary{cursor:pointer;font-size:12px;padding:8px 0}
+.node-options button{width:100%;margin:8px 0}
+.nav-actions .primary{background:var(--accent);color:var(--accent-text)}
+.empty h2{font-size:16px;margin:0;font-weight:500}
+.empty p{font-size:12px;margin:8px 0}
