@@ -40,3 +40,8 @@ python3 scripts/package_release.py --version 0.2.0
 ```
 
 [开发说明](flow-lens/README.md) · [更新记录](CHANGELOG.md)
+
+## Contributors
+
+- [SSF0](https://github.com/SSF0)：项目维护者。
+- [Codex](https://github.com/codex)：AI 协作，参与代码实现、测试与文档优化。
